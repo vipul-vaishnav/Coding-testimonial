@@ -1,0 +1,81 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  background-image: url('/images/pattern-bg.svg'), url('/images/pattern-curve.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
+  background-position: right 10% center, left bottom;
+  position: relative;
+
+  &__slide-box {
+    @include absCenter();
+    width: 78%;
+    height: auto;
+    background-image: url('/images/pattern-quotes.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top left;
+
+    &__slide {
+      @include flex(center);
+      width: 100%;
+      height: 53rem;
+
+      &__text {
+        width: calc(100% - 50rem);
+
+        &__content {
+          line-height: 1.25;
+          margin-bottom: 3rem;
+        }
+
+        &__sign {
+          font-weight: 700;
+          font-size: 2.4rem;
+
+          &__name {
+            color: $DarkBlue;
+          }
+
+          &__role {
+            color: $GrayishBlue;
+            margin-left: 2rem;
+            font-weight: 500;
+          }
+        }
+      }
+
+      &__img {
+        width: 50rem;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  &__attribution {
+    width: 100%;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.6rem;
+    text-align: center;
+
+    a {
+      color: hsl(228, 45%, 44%);
+      font-weight: 700;
+    }
+  }
+}

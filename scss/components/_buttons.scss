@@ -1,0 +1,43 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+.sliders {
+  @include flex(center);
+  position: absolute;
+  bottom: -2rem;
+  right: 25%;
+  transform: translateX(50%);
+
+  &__btn {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: $GrayishBlue;
+    background-color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-collapse: collapse;
+    border-bottom: 1px solid #777;
+
+    &--prev {
+      padding-right: 2.5rem;
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+      border-right-color: transparent;
+
+      &:active {
+        background-color: #eee;
+      }
+    }
+
+    &--next {
+      padding-left: 2.5rem;
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-left-color: transparent;
+
+      &:active {
+        background-color: #eee;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "coding-bootcamp-testimonials-slider-master",
+  "version": "1.0.0",
+  "description": "Frontend-mentor project",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass scss/index.scss:app/css/style.css --watch --no-source-map",
+    "devserver": "live-server --port=5050 --browser=chrome",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "sass scss/index.scss:app/css/style.comp.css --no-source-map",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' app/css/style.comp.css -o app/css/style.prefix.css",
+    "build": "npm-run-all compile:sass prefix:css"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SASS",
+    "JAVASCRIPT"
+  ],
+  "author": "Vipul Vaishnav",
+  "license": "MIT",
+  "devDependencies": {
+    "@compodoc/live-server": "^1.2.3",
+    "autoprefixer": "^10.4.7",
+    "concat": "^1.0.3",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.51.0"
+  }
+}
