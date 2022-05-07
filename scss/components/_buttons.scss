@@ -8,6 +8,20 @@
   right: 25%;
   transform: translateX(50%);
 
+  @media screen and (max-width: 1170px) {
+    bottom: 5rem;
+  }
+
+  @media screen and (max-width: 980px) {
+    bottom: 7rem;
+    right: 28%;
+  }
+
+  @media screen and (max-width: 965px) {
+    bottom: 22rem;
+    right: 50%;
+  }
+
   &__btn {
     border: 0;
     outline: 0;

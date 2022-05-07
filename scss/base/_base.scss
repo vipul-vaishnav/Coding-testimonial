@@ -1,6 +1,10 @@
 html {
   font-size: 62.5%;
   line-height: 1.15;
+
+  @media screen and (max-width: 616px) {
+    font-size: 50%;
+  }
 }
 
 body {
