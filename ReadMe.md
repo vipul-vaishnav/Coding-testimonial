@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/vipul-vaishnav/Coding-testimonial)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://main--slider-vipul.netlify.app/)
 
 ## My process
 

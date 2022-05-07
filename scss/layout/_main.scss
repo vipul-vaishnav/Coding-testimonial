@@ -118,7 +118,12 @@
 
         img {
           width: 100%;
-          object-fit: contain;
+          height: 100%;
+
+          @media screen and (max-width: 965px) {
+            height: auto;
+            object-fit: contain;
+          }
         }
       }
     }
